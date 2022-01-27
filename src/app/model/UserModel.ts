@@ -7,5 +7,6 @@ export class UserModel{
     public password: string
     public photo: string
     public type: string
+    public token: string
     public postagem: Postagem []
 }
