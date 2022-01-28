@@ -1,33 +1,27 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-    <div class="container-fluid">
-  
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto mb-2 mb-lg-0 d-flex align-items-center">
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <div class="container-fluid">
+    <a href="#"><img src="{{photo}}" width="55px" height="50px" alt="" class="rounded-circle"></a>
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon bg-light"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-3 mb-lg-0 d-flex align-items-center">
+        <li class="nav-item">
+          <p class="text-white m-2 ms-3 font-weight-bold f-16">Olá, {{name}}!</p>
+        </li>
+        <a href=""> 
+          <li class="pl-3">
+          <p class="text-white  fs-16 m-0"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></p> 
+         </li>
+        </a>
+      </ul>
+
+      <ul class="navbar-nav ml-auto mb-2 mb-lg-0 d-flex align-items-center">
           <li class="nav-item pl-3">
-       <img src="https://image.freepik.com/photos-gratis/jovem-mulher-sorrindo_23-2148666429.jpg" alt="" width="50px" height="50px" class="img-fluid rounded-circle">
+            <a (click) = 'sair()' class="m-0 font-weight-bold text-white fs-16">Sair</a><i class="fa fa-sign-out" aria-hidden="true"></i>
+
           </li>
-          <li class="nav-item pl-3">
-        <p class="m-0 font-weight-bold text-white fs-16">Nome do usuário</p>
-          </li>
-          <a href=""> 
-            <li class="pl-3">
-            <p class="text-white  fs-16 m-0"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></p> 
-           </li>
-          </a>
-        </ul>
-
-        <ul class="navbar-nav ml-auto mb-2 mb-lg-0 d-flex align-items-center">
-            <li class="nav-item pl-3">
-                <a class="m-0 font-weight-bold text-white fs-16">Sair</a><i class="fa fa-sign-out" aria-hidden="true"></i>
-
-    
-                  </li>
-
-        </ul>
-
-      </div>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
